@@ -18,7 +18,7 @@ export const GroupCard = ({ title, description, meta }: IGroupCard) => {
             {description && <p className="text-base"> {description} </p>}
             <div className="text-xs flex">
                 {meta.map(({ name, value }, i) => (
-                    <div key={`${name}`} className="mr-2">
+                    <div key={`${name}`} className="meta mr-2">
                         <span className="mr-1">{name}</span>
                         {value && <span>{value}</span>}
                     </div>

@@ -14,7 +14,8 @@
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src --color",
     "format": "prettier --write 'src/**/*.{ts,tsx,scss,css,json}'",
     "isready": "npm run format && npm run lint && npm run build",
-    "test": "jest",
+    "test": "jest --config=./jest.config.js",
+    "test-dev": "jest --config=./jest.config.js --watch",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },

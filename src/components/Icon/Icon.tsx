@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { HTMLAttributes } from 'react';
+
 import './data/style.css';
 
 export enum IconSize {
@@ -7,13 +8,11 @@ export enum IconSize {
     MEDIUM = '2xl',
     BIG = '4xl',
 }
-
-export interface IIcon {
+export interface IIcon extends HTMLAttributes<HTMLSpanElement> {
     name: string;
-    title?: string;
     size?: IconSize;
 }
 
-export const Icon = ({ name, title, size = IconSize.DEFAULT }: IIcon) => {
-    return <span className={`icon-${name} text-${size}`} />;
+export const Icon = ({ name, title, size = IconSize.DEFAULT, className, children, ...tail }: IIcon) => {
+    return <span className={`icon-${name} text-${size} ${className}`} {...tail} />;
 };

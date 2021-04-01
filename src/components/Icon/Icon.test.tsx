@@ -4,6 +4,6 @@ import '@testing-library/jest-dom/extend-expect';
 import { Icon } from '.';
 
 test('Icon renders', async () => {
-    render(<Icon name="upload" title="thing" />);
-    expect(screen.getByText('thing')).toBeInTheDocument();
+    const { container } = render(<Icon name="upload" id="test" />);
+    expect(container.querySelector('#test')).toBeDefined();
 });

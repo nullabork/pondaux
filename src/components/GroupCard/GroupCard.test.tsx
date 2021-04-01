@@ -9,6 +9,7 @@ const meta = [
 ];
 
 test('List card renders', async () => {
-    render(<GroupCard title="list name" description="list description" meta={meta} />);
-    expect(screen.getByText('Results 4')).toBeInTheDocument();
+    const { container } = render(<GroupCard title="list name" description="list description" meta={meta} />);
+    expect(screen.getByText('list name')).toBeInTheDocument();
+    expect(container.querySelectorAll('.meta')).toHaveLength(2);
 });
