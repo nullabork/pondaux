@@ -33,9 +33,9 @@ export const All = () => {
 
 All.storyName = 'All Icons';
 
-const base = {
+const storyArgs = {
     title: 'components/Icon',
     component: Icon,
 };
 
-export default base;
+export default storyArgs;

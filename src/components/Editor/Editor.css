@@ -1,0 +1,28 @@
+.token.editor_params {
+    color: rgb(7, 168, 7);
+}
+.token.editor_punctuation {
+    color: rgb(46, 118, 212);
+}
+.token.editor_function,
+.token.editor_keyword_funcs {
+    font-weight: bold;
+    color: rgb(50, 98, 160);
+}
+
+.token.editor_keyword {
+    font-weight: bold;
+    color: rgb(84, 146, 197);
+}
+
+.token.editor_middle,
+.token.editor_text {
+    color: rgb(219, 22, 61);
+}
+.token.editor_tag {
+    color: rgb(219, 22, 61);
+}
+.token.editor_divider {
+    color: rgb(141, 3, 141);
+    font-weight: bold;
+}

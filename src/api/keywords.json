@@ -1,0 +1,25 @@
+{
+    "keywords": [
+      { "keyword": "text", "type": "keyword" },
+      { "keyword": "hash", "type": "keyword" },
+      { "keyword": "distinct-window", "type": "function" },
+      { "keyword": "filetype", "type": "keyword" },
+      { "keyword": "geo-ip-city", "type": "keyword" },
+      { "keyword": "geo-ip-ll", "type": "keyword" },
+      { "keyword": "geo-ip-country", "type": "keyword" },
+      { "keyword": "geo-ip-subdivision", "type": "keyword" },
+      { "keyword": "has", "type": "keyword" },
+      { "keyword": "lang", "type": "keyword" },
+      { "keyword": "ml-model", "type": "function" },
+      { "keyword": "property", "type": "function" },
+      { "keyword": "random", "type": "keyword" },
+      { "keyword": "regex", "type": "keyword" },
+      { "keyword": "request-header", "type": "keyword" },
+      { "keyword": "response-header", "type": "keyword" },
+      { "keyword": "site", "type": "keyword" },
+      { "keyword": "title", "type": "keyword" },
+      { "keyword": "uri", "type": "keyword" },
+      { "keyword": "workspacesubquery", "type": "keyword" },
+      { "keyword": "xpath", "type": "keyword" }
+    ]
+  }

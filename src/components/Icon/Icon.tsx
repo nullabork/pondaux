@@ -13,6 +13,15 @@ export interface IIcon extends HTMLAttributes<HTMLSpanElement> {
     size?: IconSize;
 }
 
-export const Icon = ({ name, title, size = IconSize.DEFAULT, className, children, ...tail }: IIcon) => {
-    return <span className={`icon-${name} text-${size} ${className}`} {...tail} />;
+export const Icon = ({
+    name,
+    title,
+    size = IconSize.DEFAULT,
+    className,
+    children,
+    ...tail
+}: IIcon) => {
+    return (
+        <span className={`icon-${name} text-${size} ${className}`} {...tail} />
+    );
 };

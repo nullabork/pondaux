@@ -14,9 +14,9 @@ const Template: Story<IGroupCard> = ({ ...tail }) => <GroupCard {...tail} />;
 export const Primary = Template.bind({});
 Primary.args = { title: 'Title', description: 'Description', meta };
 
-const base = {
+const storyArgs = {
     title: 'components/GroupCard',
     component: GroupCard,
 };
 
-export default base;
+export default storyArgs;
